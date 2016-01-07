@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Interactive Magnets</title>
+
+		<script src="jquery-2.1.4.min.js"></script>
+
+		<link href="styles.css" rel="stylesheet" type="text/css">
+
+	</head>
+
+	<body>
+
+		<div class="options">
+			Type in your own (seperated by commas) or select an existing magnet set.
+
+			<textarea id="inputTextArea"></textarea>
+
+			<select id="selectExisting">
+				<option value="selectone">Select One</option>
+				<option value="sample">Sample</option>
+				<option value="lolcat">LOLCAT</option>
+				<option value="geek">Geek</option>
+				<option value="bacon">Bacon</option>
+				<option value="explicit">Explicit</option>
+			</select>
+
+<!--controls-->
+			<input type="button" value="Clear Inputs" onclick="clearInput()"></input>
+			<input type="submit" value="Submit" onclick="convertInput()"></input>
+			<input type="button" value="Clear All Magnets" onclick="clearMagnets()"></input>
+		</div>
+
+		<div class="main-container">
+			
+		</div>
+
+
+	</body>
+
+
+	<script src="main.js" type="text/javascript"></script>
+
+</html>
